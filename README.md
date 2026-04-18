@@ -1,22 +1,75 @@
-# 🌐 Logo Explorer Dashboard
+# 🌐 LogoLibrary Explorer
 
-The professional web interface for the Open Source Logo & Icon Library.
+> The official web dashboard for [LogoLibrary](https://github.com/YOUR_USERNAME/logo-library) — search, preview, and copy 1,100+ brand logos instantly.
 
-## ⚡ Tech Stack
-- **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/logo-library-web)
+
+---
+
+## ⚡ Features
+
+- 🔍 **Instant Search** — by brand name, tag, or category
+- 🏷️ **Category Filtering** — 9 curated industries
+- 📋 **One-Click Copy** — local path or Cloudinary CDN URL
+- 🖼️ **Asset Variants** — view icon, wordmark, full, and default versions
+- 📱 **Responsive** — works on mobile, tablet, and desktop
+- 🌙 **Dark UI** — built with your brand colors (#e94560 on #1a1a2e)
+
+---
 
 ## 🚀 Getting Started
-1. Install dependencies: \`npm install\`
-2. Run development server: \`npm run dev\`
-3. Open [http://localhost:3000](http://localhost:3000)
 
-## 🛠 Maintenance
-To update the library view:
-1. Copy the updated \`metadata.json\` from the root \`Logo_Library\` into \`src/app/metadata.json\`.
-2. Ensure new assets are synced to Cloudinary.
-3. Push to main to trigger auto-deployment on Vercel.
+```bash
+# Install dependencies
+npm install
 
-## 🔗 Cloudinary Integration
-To switch from local assets to CDN URLs, update the \`src/app/page.tsx\` to read from the Cloudinary \`url\` field in the manifest.
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## 🛠 Tech Stack
+
+- [Next.js 16](https://nextjs.org/) — App Router, static generation
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling
+- [TypeScript](https://www.typescriptlang.org/) — Type safety
+
+---
+
+## 📁 Project Structure
+
+```
+logo-explorer/
+├── src/app/
+│   ├── page.tsx           # Main explorer UI
+│   ├── layout.tsx         # Root layout
+│   ├── globals.css        # Global styles
+│   └── metadata.json      # Logo metadata (copied from Logo_Library)
+├── public/assets/         # Logo SVG/PNG files
+├── next.config.ts
+└── package.json
+```
+
+---
+
+## 🔄 Updating the Library
+
+When the core library grows:
+
+1. Copy the updated `metadata.json` from `Logo_Library/` into `src/app/`
+2. Sync new assets to `public/assets/`
+3. Commit and push — Vercel auto-deploys
+
+---
+
+## 📄 License
+
+MIT — see the core [LogoLibrary repo](https://github.com/YOUR_USERNAME/logo-library) for full details.
+
+---
+
+Built by [Mohamed Ajmal Ifthikar](https://github.com/YOUR_USERNAME)
