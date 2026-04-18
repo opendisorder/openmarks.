@@ -1,8 +1,8 @@
 # 🌐 LogoLibrary Explorer
 
-> The official web dashboard for [LogoLibrary](https://github.com/YOUR_USERNAME/logo-library) — search, preview, and copy 1,100+ brand logos instantly.
+> The official web dashboard for [LogoLibrary](https://github.com/ajmaliifthikar-ux/logo-library) — search, preview, and copy 1,100+ brand logos instantly.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/logo-library-web)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ajmaliifthikar-ux/logo-library-web)
 
 ---
 
@@ -68,8 +68,8 @@ When the core library grows:
 
 ## 📄 License
 
-MIT — see the core [LogoLibrary repo](https://github.com/YOUR_USERNAME/logo-library) for full details.
+MIT — see the core [LogoLibrary repo](https://github.com/ajmaliifthikar-ux/logo-library) for full details.
 
 ---
 
-Built by [Mohamed Ajmal Ifthikar](https://github.com/YOUR_USERNAME)
+Built by [Mohamed Ajmal Ifthikar](https://github.com/ajmalifthikar)
