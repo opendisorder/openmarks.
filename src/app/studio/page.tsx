@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, Suspense, lazy, useMemo, memo } from "react";
 import Link from "next/link";
+import BrandLogo from "../components/BrandLogo";
 import logoData from "../metadata.json";
 
 const SVG3D = lazy(() => import("3dsvg").then((m) => ({ default: m.SVG3D })));
@@ -17,7 +18,7 @@ const BGCOLORS = ["#0a0a0a","#ffffff","#e94560","#1a1a2e","#0f3460","#16213e","#
 const DEMO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><rect width="100" height="100" rx="20" fill="#e94560"/><text x="50" y="68" font-family="Arial,sans-serif" font-size="60" font-weight="900" fill="white" text-anchor="middle">L</text></svg>`;
 
 function getFullUrl(path: string) {
-  return `https://logo-explorer.vercel.app/assets/${path.replace(/^Assets\//, "")}`;
+  return `https://openmarks.vercel.app/assets/${path.replace(/^Assets\//, "")}`;
 }
 
 // Debounce hook for sliders
@@ -30,7 +31,7 @@ function useDebouncedCallback<T extends (...args: any[]) => void>(fn: T, delay: 
   }, [fn, timer, delay]);
 }
 
-export default function Studio() {
+export default function OpenMarksStudio() {
   const brands = useMemo(() => Object.entries(data), []);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [customSvg, setCustomSvg] = useState<string>("");
@@ -147,7 +148,7 @@ export default function Studio() {
       {/* Header */}
       <header className="h-14 border-b border-white/10 flex items-center justify-between px-4 shrink-0 bg-[#0a0a0a]/90 backdrop-blur z-10">
         <div className="flex items-center gap-3">
-          <Link href="/" className="text-sm font-medium hover:text-neutral-300 transition-colors">← LogoLibrary</Link>
+          <Link href="/" className="text-sm font-medium hover:text-neutral-300 transition-colors flex items-center gap-1">← <BrandLogo firstWord="open" secondWord="marks" size="sm" /></Link>
           <span className="text-white/20">|</span>
           <span className="text-sm font-semibold">3D Studio</span>
         </div>
